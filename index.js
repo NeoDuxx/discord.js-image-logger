@@ -73,3 +73,6 @@ module.exports = (client, options) => {
     };
   });
 };
+
+// Login the Client
+client.login(process.env.BOT_TOKEN);
