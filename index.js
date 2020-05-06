@@ -21,7 +21,7 @@ DIL(client, {
 })
 
 // Login the Client
-client.login("discord app token");
+client.login(process.env.BOT_TOKEN);
 
   };
 
