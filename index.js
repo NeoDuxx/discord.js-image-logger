@@ -73,5 +73,3 @@ module.exports = (client, options) => {
     };
   });
 };
-
-client.login(config.token);
