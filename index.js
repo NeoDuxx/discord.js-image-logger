@@ -11,18 +11,6 @@ module.exports = (client, options) => {
   };
   DIL.isImage = (file_path) => {
     return DIL.imageExtensions.has(path.extname(file_path).slice(1).toLowerCase());
-
-const client = new Discord.Client();
-// Start the module with some custom options.
-DIL(client, {
-  method: "embed", // can be "embed" "link" or "image"
-  logChannel: "images",
-  channels: ["some-channel","453502285318848512","another-channel"]
-})
-
-// Login the Client
-client.login(process.env.BOT_TOKEN);
-
   };
 
   client.on("ready", () => {
@@ -85,3 +73,5 @@ client.login(process.env.BOT_TOKEN);
     };
   });
 };
+
+client.login(config.token);
