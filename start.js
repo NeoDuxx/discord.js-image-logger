@@ -14,4 +14,4 @@ DIL(client, {
 })
 
 // Login the Client
-client.login("discord app token");
+client.login(config.token);
