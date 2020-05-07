@@ -14,4 +14,4 @@ DIL(client, {
 })
 
 // Login the Client
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
